@@ -1,12 +1,8 @@
 <?php
 /*
- * @package         {packagename}
- * @subpackage
- * @author          {authorname}
- * @version         {version}
- * @copyright       {copyright}
- * @license         {license}
- * 
- * @note            Startup based on https://github.com/fititnt/template
+ * @package         mod_weimagelist
+ * @author          Emerson Rocha Luiz - emerson at webdesign.eng.br - fititnt -  http://fititnt.org
+ * @copyright       Copyright (C) 2011 Webdesign Assessoria em Tecnilogia da Informacao. All rights reserved.
+ * @license         GNU General Public License version 3. See license.txt
  */
-defined('_JEXEC') or die('Restricted access');
+defined('_JEXEC') or die;

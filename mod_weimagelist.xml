@@ -1,43 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension
 	type="module"
-	version="1.7"
-        method="upgrade"
-        >
-	<name>mod_example</name>
-	<author>{author}</author>
-	<creationDate>{createddate}</creationDate>
-	<copyright>{copyright}</copyright>
-	<license>{license}</license>
-	<authorEmail>{authoremail}</authorEmail>
-	<authorUrl>{authorurl}</authorUrl>
+	version="2.5"
+	method="upgrade"
+	>
+	<name>mod_weimagelist</name>
+	<author>Emerson Rocha Luiz</author>
+	<creationDate>2012-03-01</creationDate>
+	<copyright>Copyright (C) 2011 Webdesign Assessoria em Tecnilogia da Informacao. All rights reserved.</copyright>
+	<license>GNU General Public License version 3. See license.txt</license>
+	<authorEmail>emerson at webdesign.eng.br</authorEmail>
+	<authorUrl>http://fititnt.org</authorUrl>
 	<version>1.0</version>
 	<description>MOD_EXAMPLE_XML_DESCRIPTION</description>
 	<files>
-		<filename module="mod_example">mod_example.php</filename>
+		<filename module="mod_weimagelist">mod_weimagelist.php</filename>
 		<filename>index.html</filename>
 		<folder>tmpl</folder>
-                <folder>languages</folder><!-- This makes one copy of languages. Is not really necessary-->
+		<folder>languages</folder><!-- This makes one copy of languages. Is not really necessary-->
 	</files>
 	<languages folder="languages">
-		<language tag="en-GB">en-GB/en-GB.mod_example.ini</language>
-		<language tag="en-GB">en-GB/en-GB.mod_example.sys.ini</language>	
+		<language tag="en-GB">en-GB/en-GB.mod_weimagelist.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_weimagelist.sys.ini</language>	
 	</languages>
-
-        <!--
-	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_CUSTOM_HTML" />
-        -->
-        
-	<install> <!-- Runs on install -->
-		<sql>
-			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
-		</sql>
-	</install>
-	<uninstall> <!-- Runs on uninstall -->
-		<sql>
-			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
-		</sql>
-	</uninstall>
         
 	<config>
 		<fields name="params">

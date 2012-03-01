@@ -2,8 +2,8 @@ PHP Joomla 1.7+ Library libexample
 {description}
 
 Author: {author} - {authoremail} - {authorurl}
-{copyright}
-{license}
+Copyright (C) 2011 Webdesign Assessoria em Tecnilogia da Informacao. All rights reserved.
+GNU General Public License version 3. See license.txt
 
 
 	

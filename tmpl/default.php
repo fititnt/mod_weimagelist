@@ -1,11 +1,10 @@
 <?php
 /*
- * @package         Mod_jcbr
- * @author          Emerson Rocha Luiz ( emerson@webdesign.eng.br - @fititnt -  http://fititnt.org )
- * @copyright       Copyright (C) 2011 Joomla! Coders Brazil ( @JCoderBR - http://jcoder.org )
- * @license         GPL3
+ * @package         mod_weimagelist
+ * @author          Emerson Rocha Luiz - emerson at webdesign.eng.br - fititnt -  http://fititnt.org
+ * @copyright       Copyright (C) 2011 Webdesign Assessoria em Tecnilogia da Informacao. All rights reserved.
+ * @license         GNU General Public License version 3. See license.txt
  */
-// no direct access
 defined('_JEXEC') or die;
 ?>
 <div class="jcbr<?php echo $moduleclass_sfx ?>">
