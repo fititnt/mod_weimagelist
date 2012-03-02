@@ -3,7 +3,7 @@
 	type="module"
 	version="2.5"
 	method="upgrade"
-	>
+>
 	<name>MOD_WEIMAGELIST</name>
 	<author>Emerson Rocha Luiz</author>
 	<creationDate>2012-03-01</creationDate>
@@ -27,7 +27,413 @@
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
+				<field
+					name="type"
+					type="list"
+					default="1"
+					label="MOD_WEIMAGELIST_FIELD_TYPE_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_TYPE_DESC">
+					<option
+						value="direct">MOD_WEIMAGELIST_FIELD_TYPE_OPT_DIRECT
+					</option>
+					<option
+						value="category">MOD_WEIMAGELIST_FIELD_TYPE_OPT_CATEGORY
+					</option>
+				</field>
+			</fieldset>
+			<fieldset name="WEIMAGELIST_DIRECT">
 
+				<field 
+					type="spacer" 
+					name="spacer1" 
+					hr="true" 
+				/>
+				<field type="spacer" 
+					   name="spacerdesc1" class="text"
+					   label="MOD_WEIMAGELIST_FIELD_DIRECT_OPT1"
+				/>
+				<field
+					name="direct_image_1"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_DESC" />
+				<field
+					name="direct_name_1"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_NAME_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_NAME_DESC" />
+
+				<field
+					name="direct_desc_1"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_DESCRIPTION_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_DESCRIPTION_DESC" />
+				<field
+					name="direct_link_1"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_LINK_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_LINK_DESC" />
+					
+				<field 
+					type="spacer" 
+					name="spacer2" 
+					hr="true" 
+				/>
+				<field type="spacer" 
+					   name="spacerdesc2" class="text"
+					   label="MOD_WEIMAGELIST_FIELD_DIRECT_OPT2"
+				/>
+				<field
+					name="direct_image_2"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_DESC" />
+				<field
+					name="direct_name_2"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_NAME_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_NAME_DESC" />
+
+				<field
+					name="direct_desc_2"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_DESCRIPTION_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_DESCRIPTION_DESC" />
+				<field
+					name="direct_link_2"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_LINK_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_LINK_DESC" />
+					
+					
+				<field 
+					type="spacer" 
+					name="spacer3" 
+					hr="true" 
+				/>
+				<field type="spacer" 
+					   name="spacerdesc3" class="text"
+					   label="MOD_WEIMAGELIST_FIELD_DIRECT_OPT3"
+				/>
+				<field
+					name="direct_image_3"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_DESC" />
+				<field
+					name="direct_name_3"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_NAME_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_NAME_DESC" />
+
+				<field
+					name="direct_desc_3"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_DESCRIPTION_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_DESCRIPTION_DESC" />
+				<field
+					name="direct_link_3"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_LINK_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_LINK_DESC" />
+					
+					
+				<field 
+					type="spacer" 
+					name="spacer4" 
+					hr="true" 
+				/>
+				<field type="spacer" 
+					   name="spacerdesc2" class="text"
+					   label="MOD_WEIMAGELIST_FIELD_DIRECT_OPT4"
+				/>
+				<field
+					name="direct_image_4"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_DESC" />
+				<field
+					name="direct_name_4"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_NAME_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_NAME_DESC" />
+
+				<field
+					name="direct_desc_4"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_DESCRIPTION_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_DESCRIPTION_DESC" />
+				<field
+					name="direct_link_4"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_LINK_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_LINK_DESC" />
+					
+					
+				<field 
+					type="spacer" 
+					name="spacer5" 
+					hr="true" 
+				/>
+				<field type="spacer" 
+					   name="spacerdesc5" class="text"
+					   label="MOD_WEIMAGELIST_FIELD_DIRECT_OPT5"
+				/>
+				<field
+					name="direct_image_5"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_DESC" />
+				<field
+					name="direct_name_5"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_NAME_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_NAME_DESC" />
+
+				<field
+					name="direct_desc_5"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_DESCRIPTION_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_DESCRIPTION_DESC" />
+				<field
+					name="direct_link_5"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_LINK_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_LINK_DESC" />
+					
+					
+				<field 
+					type="spacer" 
+					name="spacer6" 
+					hr="true" 
+				/>
+				<field type="spacer" 
+					   name="spacerdesc6" class="text"
+					   label="MOD_WEIMAGELIST_FIELD_DIRECT_OPT6"
+				/>
+				<field
+					name="direct_image_6"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_DESC" />
+				<field
+					name="direct_name_6"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_NAME_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_NAME_DESC" />
+
+				<field
+					name="direct_desc_6"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_DESCRIPTION_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_DESCRIPTION_DESC" />
+				<field
+					name="direct_link_6"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_LINK_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_LINK_DESC" />
+					
+					
+				<field 
+					type="spacer" 
+					name="spacer7" 
+					hr="true" 
+				/>
+				<field type="spacer" 
+					   name="spacerdesc7" class="text"
+					   label="MOD_WEIMAGELIST_FIELD_DIRECT_OPT7"
+				/>
+				<field
+					name="direct_image_7"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_DESC" />
+				<field
+					name="direct_name_7"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_NAME_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_NAME_DESC" />
+
+				<field
+					name="direct_desc_7"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_DESCRIPTION_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_DESCRIPTION_DESC" />
+				<field
+					name="direct_link_7"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_LINK_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_LINK_DESC" />
+					
+					
+				<field 
+					type="spacer" 
+					name="spacer8" 
+					hr="true" 
+				/>
+				<field type="spacer" 
+					   name="spacerdesc8" class="text"
+					   label="MOD_WEIMAGELIST_FIELD_DIRECT_OPT8"
+				/>
+				<field
+					name="direct_image_8"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_DESC" />
+				<field
+					name="direct_name_8"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_NAME_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_NAME_DESC" />
+
+				<field
+					name="direct_desc_8"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_DESCRIPTION_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_DESCRIPTION_DESC" />
+				<field
+					name="direct_link_8"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_LINK_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_LINK_DESC" />
+					
+					
+				<field 
+					type="spacer" 
+					name="spacer9" 
+					hr="true" 
+				/>
+				<field type="spacer" 
+					   name="spacerdesc2" class="text"
+					   label="MOD_WEIMAGELIST_FIELD_DIRECT_OPT9"
+				/>
+				<field
+					name="direct_image_9"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_DESC" />
+				<field
+					name="direct_name_9"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_NAME_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_NAME_DESC" />
+
+				<field
+					name="direct_desc_9"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_DESCRIPTION_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_DESCRIPTION_DESC" />
+				<field
+					name="direct_link_9"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_LINK_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_LINK_DESC" />
+					
+					
+				<field 
+					type="spacer" 
+					name="spacer10" 
+					hr="true" 
+				/>
+				<field type="spacer" 
+					   name="spacerdesc10" class="text"
+					   label="MOD_WEIMAGELIST_FIELD_DIRECT_OPT10"
+				/>
+				<field
+					name="direct_image_10"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_DESC" />
+				<field
+					name="direct_name_10"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_NAME_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_NAME_DESC" />
+
+				<field
+					name="direct_desc_10"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_DESCRIPTION_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_DESCRIPTION_DESC" />
+				<field
+					name="direct_link_10"
+					type="text"
+					size="60"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_LINK_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_DIRECT_LINK_DESC" />
+					
+					
+			</fieldset>
+			<fieldset name="WEIMAGELIST_CATEGORY">
+				<field
+					name="category_name"
+					type="category"
+					extension="com_content"
+					label="MOD_WEIMAGELIST_FIELD_CATEGORY_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_CATEGORY_DESC" 
+				/>
+				<field 
+					name="category_qtd"
+					type="integer"
+					default="MOD_WEIMAGELIST_FIELD_CATEGORY_QTD_LABEL"
+					label="MOD_WEIMAGELIST_FIELD_CATEGORY_QTD_LABEL"
+					description=""
+					first="1"
+					last="10"
+					step="1" 
+				/>
+				<field
+					name="category_field"
+					type="list"
+					default="1"
+					label="MOD_WEIMAGELIST_FIELD_CATEGORY_METHOD_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_CATEGORY_METHOD_LABEL">
+					<option
+						value="1">DEFAULT
+					</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING
+					</option>
+				</field>
 			</fieldset>
 			<fieldset
 				name="advanced">
@@ -36,7 +442,6 @@
 					type="modulelayout"
 					label="JFIELD_ALT_LAYOUT_LABEL"
 					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
-
 				<field
 					name="moduleclass_sfx"
 					type="text"
@@ -50,9 +455,11 @@
 					label="COM_MODULES_FIELD_CACHING_LABEL"
 					description="COM_MODULES_FIELD_CACHING_DESC">
 					<option
-						value="1">JGLOBAL_USE_GLOBAL</option>
+						value="1">JGLOBAL_USE_GLOBAL
+					</option>
 					<option
-						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING
+					</option>
 				</field>
 
 				<field
@@ -66,7 +473,8 @@
 					type="hidden"
 					default="static">
 					<option
-						value="static"></option>
+						value="static">
+					</option>
 				</field>
 			</fieldset>
 		</fields>

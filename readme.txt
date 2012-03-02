@@ -12,6 +12,8 @@ GNU General Public License version 3. See license.txt
 
 -------------------------------------- Todo ------------------------------------
 
+-> Implement support for nested tables on categories, if need
+
 ----------------------------------- Changelog ----------------------------------
 
 2012-03-01: 1.0alpha
