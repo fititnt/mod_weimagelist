@@ -7,15 +7,12 @@
  */
 defined('_JEXEC') or die;
 
-// Include helper file once
-require_once dirname(__FILE__).'/helper.php';
+//Include helper file once
+require_once __DIR__.'/helper.php';
+//Initialize the helper
+$wil = new WeImageList;
 
-if ($params->def('prepare_content', 1))
-{
-	JPluginHelper::importPlugin('content');
-	$module->content = JHtml::_('content.prepare', $module->content);
-}
-
-$moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
+//Get Params
+$moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx',''));
 
 require JModuleHelper::getLayoutPath('mod_weimagelist', $params->get('layout', 'default'));

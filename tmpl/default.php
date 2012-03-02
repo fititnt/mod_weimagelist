@@ -7,6 +7,6 @@
  */
 defined('_JEXEC') or die;
 ?>
-<div class="jcbr<?php echo $moduleclass_sfx ?>">
-	<?php echo $module->content;?>
+<div class="mod_weimagelist<?php echo $moduleclass_sfx ?>">
+		<?php echo $module->content;?>
 </div>
