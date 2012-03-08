@@ -1,4 +1,5 @@
 <?php
+
 /*
  * @package         mod_weimagelist
  * @author          Emerson Rocha Luiz - emerson at webdesign.eng.br - fititnt -  http://fititnt.org
@@ -8,11 +9,13 @@
 defined('_JEXEC') or die;
 
 //Include helper file once
-require_once __DIR__.'/helper.php';
+require_once __DIR__ . '/helper.php';
 //Initialize the helper
 $wil = new WeImageList;
+$wil->setParams($params); //$wil->type('module')->name('mod_weimagelist');
+//print_r($wil->getParam('direct_image_1'));die;
 
 //Get Params
-$moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx',''));
+$moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx', ''));
 
 require JModuleHelper::getLayoutPath('mod_weimagelist', $params->get('layout', 'default'));

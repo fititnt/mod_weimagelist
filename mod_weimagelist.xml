@@ -30,7 +30,7 @@
 				<field
 					name="type"
 					type="list"
-					default="1"
+					default="direct"
 					label="MOD_WEIMAGELIST_FIELD_TYPE_LABEL"
 					description="MOD_WEIMAGELIST_FIELD_TYPE_DESC">
 					<option
@@ -54,7 +54,8 @@
 				/>
 				<field
 					name="direct_image_1"
-					type="text"
+					type="media" 
+					directory="/"
 					size="60"
 					label="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_LABEL"
 					description="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_DESC" />
@@ -89,7 +90,8 @@
 				/>
 				<field
 					name="direct_image_2"
-					type="text"
+					type="media" 
+					directory="/"
 					size="60"
 					label="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_LABEL"
 					description="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_DESC" />
@@ -125,7 +127,8 @@
 				/>
 				<field
 					name="direct_image_3"
-					type="text"
+					type="media" 
+					directory="/"
 					size="60"
 					label="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_LABEL"
 					description="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_DESC" />
@@ -161,7 +164,8 @@
 				/>
 				<field
 					name="direct_image_4"
-					type="text"
+					type="media" 
+					directory="/"
 					size="60"
 					label="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_LABEL"
 					description="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_DESC" />
@@ -197,7 +201,8 @@
 				/>
 				<field
 					name="direct_image_5"
-					type="text"
+					type="media" 
+					directory="/"
 					size="60"
 					label="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_LABEL"
 					description="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_DESC" />
@@ -233,7 +238,8 @@
 				/>
 				<field
 					name="direct_image_6"
-					type="text"
+					type="media" 
+					directory="/"
 					size="60"
 					label="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_LABEL"
 					description="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_DESC" />
@@ -246,7 +252,8 @@
 
 				<field
 					name="direct_desc_6"
-					type="text"
+					type="media" 
+					directory="/"
 					size="60"
 					label="MOD_WEIMAGELIST_FIELD_DIRECT_DESCRIPTION_LABEL"
 					description="MOD_WEIMAGELIST_FIELD_DIRECT_DESCRIPTION_DESC" />
@@ -269,7 +276,8 @@
 				/>
 				<field
 					name="direct_image_7"
-					type="text"
+					type="media" 
+					directory="/"
 					size="60"
 					label="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_LABEL"
 					description="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_DESC" />
@@ -305,7 +313,8 @@
 				/>
 				<field
 					name="direct_image_8"
-					type="text"
+					type="media" 
+					directory="/"
 					size="60"
 					label="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_LABEL"
 					description="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_DESC" />
@@ -341,7 +350,8 @@
 				/>
 				<field
 					name="direct_image_9"
-					type="text"
+					type="media" 
+					directory="/"
 					size="60"
 					label="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_LABEL"
 					description="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_DESC" />
@@ -377,7 +387,8 @@
 				/>
 				<field
 					name="direct_image_10"
-					type="text"
+					type="media" 
+					directory="/"
 					size="60"
 					label="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_LABEL"
 					description="MOD_WEIMAGELIST_FIELD_DIRECT_IMAGE_DESC" />
@@ -459,21 +470,6 @@
 					</option>
 					<option
 						value="0">COM_MODULES_FIELD_VALUE_NOCACHING
-					</option>
-				</field>
-
-				<field
-					name="cache_time"
-					type="text"
-					default="900"
-					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
-					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
-				<field
-					name="cachemode"
-					type="hidden"
-					default="static">
-					<option
-						value="static">
 					</option>
 				</field>
 			</fieldset>

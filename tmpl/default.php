@@ -6,6 +6,9 @@
  * @license         GNU General Public License version 3. See license.txt
  */
 defined('_JEXEC') or die;
+
+/* @var $this WeImageList */
+
 ?>
 <div class="mod_weimagelist<?php echo $moduleclass_sfx ?>">
 		<?php echo $module->content;?>
