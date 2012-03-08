@@ -40,8 +40,46 @@
 						value="category">MOD_WEIMAGELIST_FIELD_TYPE_OPT_CATEGORY
 					</option>
 				</field>
+				<field
+					name="use_css"
+					type="radio"
+					default="1"
+					label="MOD_WEIMAGELIST_FIELD_USE_CSS_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_USE_CSS_DESC">
+					<option
+						value="1">JYES
+					</option>
+					<option
+						value="2">JNO
+					</option>
+				</field>
+				<field
+					name="use_js"
+					type="radio"
+					default="1"
+					label="MOD_WEIMAGELIST_FIELD_USE_JS_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_USE_JS_DESC">
+					<option
+						value="1">JYES
+					</option>
+					<option
+						value="2">JNO
+					</option>
+				</field>
 			</fieldset>
 			<fieldset name="WEIMAGELIST_DIRECT">
+
+				<field 
+					name="direct_qtd"
+					type="integer"
+					default="10"
+					label="MOD_WEIMAGELIST_FIELD_DIRECT_QTD_LABEL"
+					description=""
+					first="1"
+					last="10"
+					step="1" 
+				/>
+
 
 				<field 
 					type="spacer" 

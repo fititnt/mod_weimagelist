@@ -14,7 +14,7 @@ require_once __DIR__ . '/helper.php';
 $wil = new WeImageList;
 $wil->setParams($params); //$wil->type('module')->name('mod_weimagelist');
 //print_r($wil->getParam('direct_image_1'));die;
-//print_r($wil->getList());die;
+$list = $wil->getList();
 
 //Get Params
 $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx', ''));

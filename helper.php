@@ -111,8 +111,8 @@ class WeImageList {
 	 * @param String $name 
 	 * @return Mixed this->$name: value of var
 	 */
-	public function getParam($name) {
-		return $this->env->params->get($name);
+	public function getParam($name, $default = NULL) {
+		return $this->env->params->get($name, $default);
 	}
 
 	/**
@@ -204,10 +204,11 @@ class WeImageList {
 		}
 
 		$i = 1;
-		for ($i = 1; $i < 10; ++$i) {
+		$max = $this->getParam('direct_qtd', 10);
+		for ($i = 1; $i < $max; ++$i) {
 			$this->list[$i] = new stdClass;
 			$this->list[$i]->path = $this->env->params->get('direct_image_' . $i);
-			$this->list[$i]->name = $this->env->params->get('irect_name' . $i);
+			$this->list[$i]->name = $this->env->params->get('direct_name' . $i);
 			$this->list[$i]->desc = $this->env->params->get('direct_desc_' . $i);
 			$this->list[$i]->link = $this->env->params->get('direct_link_' . $i);
 		}
