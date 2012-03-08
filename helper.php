@@ -9,7 +9,7 @@
 defined('_JEXEC') or die;
 
 class WeImageList {
-	
+
 	/**
 	 * Envoriment variables
 	 * 
@@ -18,11 +18,19 @@ class WeImageList {
 	protected $env;
 
 	/**
+	 * Imagelist
+	 * 
+	 * @var object 
+	 */
+	protected $list;
+
+	/**
 	 * Initialize values
 	 */
 	public function __construct($initialize = TRUE) {
-		if($initialize){
+		if ($initialize) {
 			$this->env = new stdClass;
+			$this->list = array();
 		}
 	}
 
@@ -92,7 +100,7 @@ class WeImageList {
 	public function get($name) {
 		return $this->$name;
 	}
-	
+
 	/**
 	 * Get one Param
 	 * 
@@ -103,7 +111,7 @@ class WeImageList {
 	 * @param String $name 
 	 * @return Mixed this->$name: value of var
 	 */
-	public function getParam($name){
+	public function getParam($name) {
 		return $this->env->params->get($name);
 	}
 
@@ -118,7 +126,7 @@ class WeImageList {
 		$this->$name = $value;
 		return $this;
 	}
-	
+
 	/**
 	 * Manualy set Params in to this class instead of use loadParameters()
 	 * 
@@ -126,40 +134,40 @@ class WeImageList {
 	 * @param object $params 
 	 * @return Object $this Suport for method chaining
 	 */
-	public function setParams($params){
+	public function setParams($params) {
 		$this->env->params = $params;
 		return $this;
 	}
-	
+
 	/**
 	 * @todo implement this function
 	 * 
 	 * @param type $name 
 	 */
-	public function method($name){
+	public function method($name) {
 		
 	}
-	
+
 	/**
 	 * Set Type of envoriment
 	 * 
 	 * @param string $name 
 	 */
-	public function type($name){
+	public function type($name) {
 		$this->env->type = $name;
 		return $this;
 	}
-	
+
 	/**
 	 * Set name of envoriment
 	 * 
 	 * @param string $name 
 	 */
-	public function name($name){
+	public function name($name) {
 		$this->env->name = $name;
 		return $this;
 	}
-	
+
 	/**
 	 * Try load params based on $this->env->type and $this->env->name
 	 * 
@@ -168,20 +176,42 @@ class WeImageList {
 	 * @param boolean $reload If must force reload $params if already defined
 	 * @return object $this->env->params
 	 */
-	protected function loadParameters($reload = false){
-		if($reload || empty($this->env->params)){
+	protected function loadParameters($reload = false) {
+		if ($reload || empty($this->env->params)) {
 			//@todo make ir portable for another types of extensions. In this
 			//case, is not really necessary, but for reusability, it could be
 			//(fititnt, 2012-03-08 12:04)
-			if($this->env->type == 'module'){
+			if ($this->env->type == 'module') {
 				
 			} else {
 				//See last todo.
 				die('Load params of type ' . $this->env->type . 'not implemented'
-					. ' in ' .__METHOD__);
+						. ' in ' . __METHOD__);
 			}
 		}
 		return $this->env->params;
+	}
+
+	/**
+	 * Return Array of objects with informatiob parsed from configuration
+	 * 
+	 * @param Boolean $reload
+	 * @return Array $this->list Array of Objects
+	 */
+	public function getList($reload = FALSE) {
+		if ($reload && !empty($this->list)) {
+			return $this->list;
+		}
+
+		$i = 1;
+		for ($i = 1; $i < 10; ++$i) {
+			$this->list[$i] = new stdClass;
+			$this->list[$i]->path = $this->env->params->get('direct_image_' . $i);
+			$this->list[$i]->name = $this->env->params->get('irect_name' . $i);
+			$this->list[$i]->desc = $this->env->params->get('direct_desc_' . $i);
+			$this->list[$i]->link = $this->env->params->get('direct_link_' . $i);
+		}
+		return $this->list;
 	}
 
 }
