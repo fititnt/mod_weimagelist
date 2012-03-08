@@ -66,17 +66,30 @@
 						value="2">JNO
 					</option>
 				</field>
+				<field
+					name="use_selectivizr"
+					type="radio"
+					default="1"
+					label="MOD_WEIMAGELIST_FIELD_USE_SELECTVIZR_LABEL"
+					description="MOD_WEIMAGELIST_FIELD_USE_SELECTVIZR_DESC">
+					<option
+						value="1">JYES
+					</option>
+					<option
+						value="2">JNO
+					</option>
+				</field>
 			</fieldset>
 			<fieldset name="WEIMAGELIST_DIRECT">
 
 				<field 
 					name="direct_qtd"
 					type="integer"
-					default="10"
+					default="9"
 					label="MOD_WEIMAGELIST_FIELD_DIRECT_QTD_LABEL"
 					description=""
 					first="1"
-					last="10"
+					last="50"
 					step="1" 
 				/>
 

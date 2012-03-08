@@ -12,35 +12,21 @@ defined('_JEXEC') or die;
 /*
  * Note: this template have a few inline CSS because javascript overrides
  */
-if ($wil->getParam('use_css', 1)) {
-	?>
-	<style>
-		
-	</style>
-	<?php
-}
-if ($wil->getParam('use_js', 1)) {
-	?>
-	<script>
-		
-	</script>
-	<?php
-}
-
-
 $i = 1;
 ?>
-<ul id="weimagelist<?php echo $moduleclass_sfx ?>">
-	<?php foreach ($list AS $item): ?>
-		<li id="weimage<?php echo $moduleclass_sfx . '-' . $i ?>">
-			<a href="<?php echo $item->link ?>">
-				<img src="<?php echo $item->path ?>" />
-				<h3 style="display: block; opacity: 0;"><?php echo $item->name ?></h3>
-				<p style="display: block; opacity: 0;"><?php echo $item->desc ?></p>
-			</a>
-		</li>
-		<?php
-		++$i;
-	endforeach;
-	?>
-</ul>
+<div id="weimagelist<?php echo $moduleclass_sfx ?>">
+	<ul class="weimagelist<?php echo $moduleclass_sfx ?>">
+		<?php foreach ($list AS $item): ?>
+			<li id="weimage<?php echo $moduleclass_sfx . '-' . $i ?>">
+				<a href="<?php echo $item->link ?>">
+					<img src="<?php echo $item->path ?>" />
+					<h3 style="display: block; opacity: 0;"><?php echo $item->name ?></h3>
+					<p style="display: block; opacity: 0;"><?php echo $item->desc ?></p>
+				</a>
+			</li>
+			<?php
+			++$i;
+		endforeach;
+		?>
+	</ul>
+</div>
