@@ -16,6 +16,9 @@
 	<files>
 		<filename module="mod_weimagelist">mod_weimagelist.php</filename>
 		<filename>index.html</filename>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>img</folder>
 		<folder>tmpl</folder>
 		<folder>languages</folder><!-- This makes one copy of languages. Is not really necessary-->
 	</files>
@@ -50,7 +53,7 @@
 						value="1">JYES
 					</option>
 					<option
-						value="2">JNO
+						value="0">JNO
 					</option>
 				</field>
 				<field
@@ -63,7 +66,7 @@
 						value="1">JYES
 					</option>
 					<option
-						value="2">JNO
+						value="0">JNO
 					</option>
 				</field>
 				<field
@@ -76,7 +79,7 @@
 						value="1">JYES
 					</option>
 					<option
-						value="2">JNO
+						value="0">JNO
 					</option>
 				</field>
 			</fieldset>

@@ -9,7 +9,7 @@
 defined('_JEXEC') or die;
 
 //Include helper file once
-require_once __DIR__ . '/helper.php';
+require_once  dirname(__FILE__) . '/helper.php';
 //Initialize the helper
 $wil = new WeImageList;
 $wil->setParams($params); //$wil->type('module')->name('mod_weimagelist');

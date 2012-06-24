@@ -1,5 +1,8 @@
 PHP Joomla 2.5 WeImagelist
-{description}
+Modulo um pouco além de conteitual para listar imagens. Foi baseado em uma das
+extensões para um cliente e o código não muito específico está aqui. Não há garantias
+de atualizações futuras caso não haja uma necessidade especifica
+
 
 Author: Emerson Rocha Luiz - emerson at webdesign.eng.br - http
 Copyright (C) 2011 Webdesign Assessoria em Tecnologia da Informacao. All rights reserved.
